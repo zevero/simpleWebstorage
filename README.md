@@ -1,5 +1,5 @@
-Storage
-=======
+simpleWebStorage
+================
 
 A clean interface for localStorage / sessionStorage in <20 lines of code.
 
