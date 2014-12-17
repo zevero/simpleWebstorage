@@ -1,7 +1,9 @@
 Storage
 =======
 
-A much cleaner interface for localStorage / sessionStorage with less than 20 lines of code. Even simpler than [simpleStorage](https://github.com/andris9/simpleStorage) the simpler fork of [jStorage](https://github.com/andris9/jStorage).
+A clean interface for localStorage / sessionStorage in <20 lines of code.
+
+Even simpler than [simpleStorage](https://github.com/andris9/simpleStorage) the simpler fork of [jStorage](https://github.com/andris9/jStorage).
 
 
 Usage
