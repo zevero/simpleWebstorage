@@ -1,0 +1,26 @@
+{
+  "name": "simple-webstorage",
+  "version": "1.0.0",
+  "homepage": "https://github.com/zevero/simpleWebstorage",
+  "authors": [
+    "Severin Puschkarski <severin@puschkarski.org>"
+  ],
+  "description": "A clean interface for localStorage / sessionStorage in <20 lines of code.",
+  "main": "extendStorage.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "webstorage",
+    "localstorage",
+    "sessionstorage"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
