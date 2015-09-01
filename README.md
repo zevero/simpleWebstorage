@@ -12,7 +12,6 @@ Usage
     localStorage.set('myKey',{a:[1,2,5], b: 'ok'});
     localStorage.has('myKey');   // --> true
     localStorage.get('myKey');   // --> {a:[1,2,5], b: 'ok'}
-    localStorage.size('myKey');  // --> 22
     localStorage.keys();         // --> ['myKey']
     localStorage.remove('myKey');
 
