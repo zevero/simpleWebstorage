@@ -1,3 +1,8 @@
+/*
+Wonder how this works?
+Storage is the Prototype of both localStorage and sessionStorage.
+Got it?
+*/
 Storage.prototype.set = function(key, obj) {
   var t = typeof obj;
   if (t==='undefined' || obj===null ) this.removeItem(key);
