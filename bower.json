@@ -1,6 +1,6 @@
 {
   "name": "simple-webstorage",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "homepage": "https://github.com/zevero/simpleWebstorage",
   "authors": [
     "Severin Puschkarski <severin@puschkarski.org>"
@@ -13,7 +13,10 @@
   "keywords": [
     "webstorage",
     "localstorage",
-    "sessionstorage"
+    "sessionstorage",
+    "simple",
+    "small",
+    "storage"
   ],
   "license": "MIT",
   "ignore": [
