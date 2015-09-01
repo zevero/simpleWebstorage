@@ -15,10 +15,6 @@ Storage.prototype.get = function(key) {
 Storage.prototype.has = this.hasOwnProperty;
 Storage.prototype.remove = this.removeItem;
 
-Storage.prototype.size = function(key){
-  var obj = this.getItem(key);
-  return obj?obj.length:0;
-}
 Storage.prototype.keys = function(){
   Object.keys(this.valueOf());
 }
