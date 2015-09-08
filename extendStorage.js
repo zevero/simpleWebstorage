@@ -10,7 +10,11 @@ Storage.prototype.set = function(key, obj) {
 }
 Storage.prototype.get = function(key) {
     var obj = this.getItem(key);
-    return obj && JSON.parse(obj);
+    try {
+      var j = JSON.parse(obj);
+      if (j && typeof j === "object") return j;
+    } catch (e) { }
+    return obj;
 }
 Storage.prototype.has = this.hasOwnProperty;
 Storage.prototype.remove = this.removeItem;
