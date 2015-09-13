@@ -20,5 +20,5 @@ Storage.prototype.has = this.hasOwnProperty;
 Storage.prototype.remove = this.removeItem;
 
 Storage.prototype.keys = function(){
-  Object.keys(this.valueOf());
+  return Object.keys(this.valueOf());
 }
