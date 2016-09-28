@@ -5,6 +5,8 @@ A clean interface for localStorage / sessionStorage in <20 lines of code.
 
 Even simpler than [simpleStorage](https://github.com/andris9/simpleStorage) the simpler fork of [jStorage](https://github.com/andris9/jStorage).
 
+Installs with `bower install simple-webstorage --save`
+
 
 Usage
 -----
