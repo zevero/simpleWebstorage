@@ -1,3 +1,5 @@
+/*globals Storage*/
+'use strict';
 /*
 Wonder how this works?
 Storage is the Prototype of both localStorage and sessionStorage.
