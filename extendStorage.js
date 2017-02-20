@@ -9,11 +9,11 @@ Got it?
 
   Storage.prototype.set = function(key, obj) {
     var t = typeof obj;
-    if (t==='undefined' || obj===null ) window.removeItem(key);
-    window.setItem(key, (t==='object')?JSON.stringify(obj):obj);
+    if (t==='undefined' || obj===null ) this.removeItem(key);
+    this.setItem(key, (t==='object')?JSON.stringify(obj):obj);
   };
   Storage.prototype.get = function(key) {
-      var obj = window.getItem(key);
+      var obj = this.getItem(key);
       try {
         var j = JSON.parse(obj);
         if (j && typeof j === "object") return j;
@@ -24,7 +24,7 @@ Got it?
   Storage.prototype.remove = window.removeItem;
 
   Storage.prototype.keys = function(){
-    return Object.keys(window.valueOf());
+    return Object.keys(this.valueOf());
   };
 
 })();
