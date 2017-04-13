@@ -34,7 +34,7 @@ Got it?
       return obj;
   };
   Storage.prototype.extend = function(key, obj_merge) {
-    this.set(key,extend(this.get(key),obj_merge);
+    this.set(key,extend(this.get(key),obj_merge));
   };
   
   Storage.prototype.has = window.hasOwnProperty;
