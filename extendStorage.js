@@ -25,8 +25,7 @@ Got it?
     var obj = this.get(key);
     if (typeof obj !== "object" || typeof obj_merge !== "object") return null;
     Object.assign(obj, obj_merge);
-    this.set(key,obj);
-    return obj;
+    return this.set(key,obj);
   };
   
   Storage.prototype.has = window.hasOwnProperty;
