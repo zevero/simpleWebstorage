@@ -7,6 +7,19 @@ Got it?
 (function() {
   'use strict';
 
+  function extend(){
+    for(var i=1; i<arguments.length; i++)
+        for(var key in arguments[i])
+            if(arguments[i].hasOwnProperty(key)) { 
+                if (typeof arguments[0][key] === 'object'
+                    && typeof arguments[i][key] === 'object')
+             				extend(arguments[0][key], arguments[i][key]);
+                else
+                   arguments[0][key] = arguments[i][key];
+             }
+    return arguments[0];
+  }
+  
   Storage.prototype.set = function(key, obj) {
     var t = typeof obj;
     if (t==='undefined' || obj===null ) this.removeItem(key);
@@ -20,6 +33,10 @@ Got it?
       } catch (e) { }
       return obj;
   };
+  Storage.prototype.extend = function(key, obj_merge) {
+    this.set(key,extend(this.get(key),obj_merge);
+  };
+  
   Storage.prototype.has = window.hasOwnProperty;
   Storage.prototype.remove = window.removeItem;
 
