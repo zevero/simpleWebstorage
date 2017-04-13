@@ -11,17 +11,22 @@ Got it?
     var t = typeof obj;
     if (t==='undefined' || obj===null ) this.removeItem(key);
     this.setItem(key, (t==='object')?JSON.stringify(obj):obj);
+    return obj;
   };
   Storage.prototype.get = function(key) {
-      var obj = this.getItem(key);
-      try {
-        var j = JSON.parse(obj);
-        if (j && typeof j === "object") return j;
-      } catch (e) { }
-      return obj;
+    var obj = this.getItem(key);
+    try {
+       var j = JSON.parse(obj);
+       if (j && typeof j === "object") return j;
+     } catch (e) { }
+     return obj;
   };
   Storage.prototype.assign = function(key, obj_merge) {
-    this.set(key,Object.assign(this.get(key), obj_merge));
+    var obj = this.get(key);
+    if (typeof obj !== "object" || typeof obj_merge !== "object") return null;
+    Object.assign(obj, obj_merge);
+    this.set(key,obj);
+    return obj;
   };
   
   Storage.prototype.has = window.hasOwnProperty;
