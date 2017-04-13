@@ -12,7 +12,7 @@ Usage
 -----
 
     localStorage.set('myKey',{a:[1,2,5], b: 'ok'}); //can set a json Object
-    localStorage.assign('myKey'),{a:[6], c:42]};    //shallow merge using Object.assign
+    localStorage.assign('myKey',{a:[6], c:42});     //shallow merge using Object.assign
     localStorage.has('myKey');                      // --> true
     localStorage.get('myKey');                      // --> {a:[6], b: 'ok', c:42}
     localStorage.keys();                            // --> ['myKey']
